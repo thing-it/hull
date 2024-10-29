@@ -69,12 +69,12 @@ You can find TypeScript type definitions in `src` folder.
 
 ## Contribute
 
-If you want to get involved with Hull.js development, just use <a href="https://guides.github.com/introduction/flow/index.html" target="_blank">github flow</a> and feel free to contribute!
+If you want to contribute, just follow <a href="https://docs.github.com/en/get-started/using-github/github-flow" target="_blank">GitHub flow</a>.
 
 ## To-do
 
-* think about holes.
-* think about automatic `concavity` adjustment based on density.
+* Think about polygons with holes.
+* Think about automatic `concavity` adjustment based on density.
 
 ## Related papers
 
@@ -91,10 +91,12 @@ If you want to get involved with Hull.js development, just use <a href="https://
 <details>
     <summary>Expand</summary>
 
+### 1.0.9 - 29.10.2024
+- Update NPM dependencies to address vulnerability issues.
 ### 1.0.8 - 31.05.2024
 - Deprecate library on [npmjs registry](https://docs.npmjs.com/cli/v10/using-npm/registry).
 ### 1.0.7 - 03.05.2024
-This release squashes former 1.0.3, 1.0.4, 1.0.5 and 1.0.6 releases into one reasonable commit with the following minor changes:
+Squashes few previous small releases into one bigger commit with the following minor changes:
 - Fix issue with formatting when users pass less than 4 points as an input.
 - Remove bower and travis files as they are deprecated.
 ### 1.0.2 — 26.09.2021
