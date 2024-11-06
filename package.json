@@ -1,7 +1,7 @@
 {
     "name": "hull.js",
-    "version": "1.0.9",
-    "description": "JavaScript library that builds concave hulls (shapes) by the set of points",
+    "version": "1.0.10",
+    "description": "JavaScript library that builds concave hull (shape) by set of points",
     "homepage": "https://github.com/AndriiHeonia/hull",
     "keywords": [
         "geometry",
@@ -9,7 +9,7 @@
         "math",
         "algorithm"
     ],
-    "author": "Andrii Heonia",
+    "author": "Andrii Heonia <a.heonia@gmail.com>",
     "repository": {
         "type": "git",
         "url": "git://github.com/AndriiHeonia/hull.git"
@@ -24,7 +24,7 @@
     },
     "scripts": {
         "watch": "./node_modules/nodemon/bin/nodemon.js --watch src --exec \"./node_modules/browserify/bin/cmd.js ./src/hull.js --standalone hull > ./dist/hull.js\"",
-        "test": "./node_modules/jshint/bin/jshint src/intersect.js && ./node_modules/jshint/bin/jshint src/grid.js && ./node_modules/jshint/bin/jshint src/hull.js && ./node_modules/.bin/mocha -R spec && ./node_modules/browserify/bin/cmd.js ./src/hull.js --standalone hull > ./dist/hull.js"
+        "test": "./node_modules/jshint/bin/jshint src && ./node_modules/.bin/mocha -R spec && ./node_modules/browserify/bin/cmd.js ./src/hull.js --standalone hull > ./dist/hull.js"
     },
     "jshintConfig": {
         "forin": false,

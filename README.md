@@ -1,4 +1,4 @@
-Hull.js is a JavaScript library that builds concave hull by a set of points.
+Hull.js is a JavaScript library that builds concave hull by set of points.
 
 ## Examples
 
@@ -91,12 +91,14 @@ If you want to contribute, just follow <a href="https://docs.github.com/en/get-s
 <details>
     <summary>Expand</summary>
 
+### 1.0.10 - 06.11.2024
+- Security improvements.
 ### 1.0.9 - 29.10.2024
 - Update NPM dependencies to address vulnerability issues.
 ### 1.0.8 - 31.05.2024
 - Deprecate library on [npmjs registry](https://docs.npmjs.com/cli/v10/using-npm/registry).
 ### 1.0.7 - 03.05.2024
-Squashes few previous small releases into one bigger commit with the following minor changes:
+Squash previous tiny releases into one bigger commit with the following minor changes:
 - Fix issue with formatting when users pass less than 4 points as an input.
 - Remove bower and travis files as they are deprecated.
 ### 1.0.2 — 26.09.2021
