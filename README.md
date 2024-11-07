@@ -91,8 +91,8 @@ If you want to contribute, just follow <a href="https://docs.github.com/en/get-s
 <details>
     <summary>Expand</summary>
 
-### 1.0.10 - 06.11.2024
-- Security improvements.
+### 1.0.10 - 07.11.2024
+- Fix vulnerability issue.
 ### 1.0.9 - 29.10.2024
 - Update NPM dependencies to address vulnerability issues.
 ### 1.0.8 - 31.05.2024
