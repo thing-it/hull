@@ -54,7 +54,7 @@ This library is not hosted on npmjs.com, but you can use [GitHub URL](https://do
 
 ```
 "dependencies": {
-    "hull.js": "andriiheonia/hull"
+    "hull.js": "andriiheonia/hull#semver:^1.0.10"
 }
 ```
 
