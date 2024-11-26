@@ -50,7 +50,7 @@ You may use [polyfills](https://www.npmjs.com/package/core-js) for `Set` and com
 
 ## NPM package
 
-This library is not hosted on npmjs.com, but you can use [GitHub URL](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#github-urls) as a dependency, e.g.:
+Since version 1.0.7 this library is not hosted on npmjs.com, but you can use [GitHub URL](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#github-urls) as a dependency, e.g.:
 
 ```
 "dependencies": {
