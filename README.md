@@ -68,7 +68,7 @@ Since version 1.0.7 this library is not hosted on npmjs.com, but you can use [Gi
 
 ```
 "dependencies": {
-    "hull.js": "andriiheonia/hull#semver:^1.0.10"
+    "hull.js": "andriiheonia/hull#semver:^1.0.11"
 }
 ```
 
@@ -105,6 +105,8 @@ If you want to contribute, just follow <a href="https://docs.github.com/en/get-s
 <details>
     <summary>Expand</summary>
 
+### 1.0.11 - 11.12.2024
+- Minor fixes in package.json.
 ### 1.0.10 - 07.11.2024
 - Fix vulnerability issue.
 ### 1.0.9 - 29.10.2024
