@@ -1,7 +1,7 @@
 /*
  (c) 2014-2024, Andrii Heonia
  Hull.js is a JavaScript library that builds concave hull by set of points.
- https://github.com/AndriiHeonia/hull
+ https://github.com/andriiheonia/hull
 */
 
 'use strict';

@@ -35,20 +35,20 @@ Let's see step by step what happens when you call `hull()` function:
 <ol>
     <li>
         <div>Hull.js takes your source points of the shape:</div>
-        <div><img src="https://raw.githubusercontent.com/AndriiHeonia/hull/master/readme-imgs/0.png" /></div>
+        <div><img src="https://raw.githubusercontent.com/andriiheonia/hull/master/readme-imgs/0.png" /></div>
     </li>
     <li>
         <div>Builds convex hull:</div>
-        <div><img src="https://raw.githubusercontent.com/AndriiHeonia/hull/master/readme-imgs/1.png" /></div>
+        <div><img src="https://raw.githubusercontent.com/andriiheonia/hull/master/readme-imgs/1.png" /></div>
     </li>
     <li>
         <div>After that, the edges flex inward (according to the `concavity` param). For example:</div>
         <div>
-            <img src="https://raw.githubusercontent.com/AndriiHeonia/hull/master/readme-imgs/2_1.png" />
+            <img src="https://raw.githubusercontent.com/andriiheonia/hull/master/readme-imgs/2_1.png" />
             `concavity = 80`<br/>
-            <img src="https://raw.githubusercontent.com/AndriiHeonia/hull/master/readme-imgs/2_2.png" />
+            <img src="https://raw.githubusercontent.com/andriiheonia/hull/master/readme-imgs/2_2.png" />
             `concavity = 40`<br/>
-            <img src="https://raw.githubusercontent.com/AndriiHeonia/hull/master/readme-imgs/2_3.png" />
+            <img src="https://raw.githubusercontent.com/andriiheonia/hull/master/readme-imgs/2_3.png" />
             `concavity = 20`
         </div>
     </li>
