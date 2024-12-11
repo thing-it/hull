@@ -1,6 +1,6 @@
 {
     "name": "hull.js",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "description": "JavaScript library that builds concave hull (shape) by set of points",
     "homepage": "https://github.com/andriiheonia/hull",
     "keywords": [
