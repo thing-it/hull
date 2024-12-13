@@ -1,3 +1,5 @@
+# NOTE: This repository has been deprecated and archived. It is read-only and no longer maintained.
+
 Hull.js is a JavaScript library that builds concave hull by set of points.
 
 ## Table of contents
@@ -9,7 +11,6 @@ Hull.js is a JavaScript library that builds concave hull by set of points.
 - [NPM package](#npm-package)
 - [Development](#development)
 - [TypeScript](#typescript)
-- [Contribute](#contribute)
 - [To-do](#to-do)
 - [Related papers](#related-papers)
 - [Changelog](#changelog)
@@ -64,13 +65,7 @@ You may use [polyfills](https://www.npmjs.com/package/core-js) for `Set` and com
 
 ## NPM package
 
-Since version 1.0.7 this library is not hosted on npmjs.com, but you can use [GitHub URL](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#github-urls) as a dependency, e.g.:
-
-```
-"dependencies": {
-    "hull.js": "andriiheonia/hull#semver:^1.0.11"
-}
-```
+Since version 1.0.7 this library is not hosted on npmjs.com. You can still use [GitHub URL](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#github-urls) as a dependency to fetch the latest version, but keep in mind that since version 1.0.11 the library has also been archived on GitHub and there are no plans to maintain it.
 
 ## Development
 	npm install     # install dependencies
@@ -80,10 +75,6 @@ Since version 1.0.7 this library is not hosted on npmjs.com, but you can use [Gi
 ## TypeScript
 
 You can find TypeScript type definitions in `src` folder.
-
-## Contribute
-
-If you want to contribute, just follow <a href="https://docs.github.com/en/get-started/using-github/github-flow" target="_blank">GitHub flow</a>.
 
 ## To-do
 
