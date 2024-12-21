@@ -2,19 +2,6 @@
 
 Hull.js is a JavaScript library that builds concave hull by set of points.
 
-## Table of contents
-- [Examples](#examples)
-- [Usage](#usage)
-- [Params](#params)
-- [How it works](#how-it-works)
-- [Limitations](#limitations)
-- [NPM package](#npm-package)
-- [Development](#development)
-- [TypeScript](#typescript)
-- [To-do](#to-do)
-- [Related papers](#related-papers)
-- [Changelog](#changelog)
-
 ## Examples
 
 See live examples <a target="_blank" href="http://andriiheonia.github.io/hull/">here</a>.
@@ -25,11 +12,15 @@ See live examples <a target="_blank" href="http://andriiheonia.github.io/hull/">
 	hull(points, 50); // returns points of the hull (in clockwise order)
 
 ## Params
+
 * 1st param - array of coordinates in format: `[[x1, y1], [x2, y2], ..., [xn, yn]]`.
 * 2nd param - concavity. `1` - thin shape. `Infinity` - convex hull. By default `20`.
 * 3rd param - points format. For example: `['.lng', '.lat']` if you have `{lng: x, lat: y}` points. By default you can use `[x, y]` points.
 
 ## How it works
+
+<details>
+    <summary>Expand</summary>
 
 Let's see step by step what happens when you call `hull()` function:
 
@@ -55,31 +46,21 @@ Let's see step by step what happens when you call `hull()` function:
     </li>
 </ol>
 
-## Limitations
-This library relies on ES6. The ES6 features used are:
-- `new Set(null)`, `Set#add`, `Set#has`.
-- `let`, `const`.
-- `Math.trunc` (if available).
-
-You may use [polyfills](https://www.npmjs.com/package/core-js) for `Set` and compile with [babel](https://babeljs.io/) to continue to support old browsers.
+</details>
 
 ## NPM package
 
-Since version 1.0.7 this library is not hosted on npmjs.com. You can still use [GitHub URL](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#github-urls) as a dependency to fetch the latest version, but keep in mind that since version 1.0.11 the library has also been archived on GitHub and there are no plans to maintain it.
+Since version 1.0.7 this library is not hosted on npmjs.com. You can still use [GitHub URL](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#github-urls) as a dependency to fetch the latest version, but keep in mind that the library has also been archived on GitHub and there are no plans to maintain it. Publishing this library to the public NPM registry under a different name and encouraging other users using unmaintained package is not recommended.
 
 ## Development
-	npm install     # install dependencies
-	npm test        # build dist file and run tests
-	npm run watch   # watch ./src dir and rebuild dist file
+
+    npm install     # install dependencies
+    npm run test    # run tests and build file for debugging in browser
+    npm run watch   # watch ./src dir and automatically rebuild file for debugging
 
 ## TypeScript
 
-You can find TypeScript type definitions in `src` folder.
-
-## To-do
-
-* Think about polygons with holes.
-* Think about automatic `concavity` adjustment based on density.
+You can install <a target="_blank" href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/hull.js">third-party TypeScript definitions</a> via `npm install --save @types/hull.js`.
 
 ## Related papers
 
@@ -96,6 +77,8 @@ You can find TypeScript type definitions in `src` folder.
 <details>
     <summary>Expand</summary>
 
+### 1.0.12 - 21.12.2024
+- Some cleanup before archiving.
 ### 1.0.11 - 11.12.2024
 - Minor fixes in package.json.
 ### 1.0.10 - 07.11.2024
