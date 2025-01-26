@@ -1,4 +1,4 @@
-# NOTE: This repository has been deprecated and archived. It is read-only and no longer maintained.
+# NOTE: This library is unmaintained and deprecated.
 
 Hull.js is a JavaScript library that builds concave hull by set of points.
 
@@ -50,7 +50,9 @@ Let's see step by step what happens when you call `hull()` function:
 
 ## NPM package
 
-Since version 1.0.7 this library is not hosted on npmjs.com. You can still use [GitHub URL](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#github-urls) as a dependency to fetch the latest version, but keep in mind that the library has also been archived on GitHub and there are no plans to maintain it. Publishing this library to the public NPM registry under a different name and encouraging other users using unmaintained package is not recommended.
+Since version 1.0.7 this library is not hosted on npmjs.com. You can still use [GitHub URL](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#github-urls) as a dependency to fetch the latest version, but keep in mind that the entire library is deprecated and there are no plans to maintain it.
+
+Publishing this library to the public NPM registry under a different name and encouraging other users using unmaintained package is not recommended.
 
 ## Development
 
@@ -77,8 +79,8 @@ You can install <a target="_blank" href="https://github.com/DefinitelyTyped/Defi
 <details>
     <summary>Expand</summary>
 
-### 1.0.12 - 21.12.2024
-- Some cleanup before archiving.
+### 1.0.12 - 26.01.2025
+- Some cleanup and deprecation.
 ### 1.0.11 - 11.12.2024
 - Minor fixes in package.json.
 ### 1.0.10 - 07.11.2024
