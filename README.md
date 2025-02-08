@@ -1,70 +1,31 @@
-# NOTE: This library is unmaintained and deprecated.
+## NOTE: This library is unmaintained and deprecated.
 
-Hull.js is a JavaScript library that builds concave hull by set of points.
+<details>
+    <summary>Click to expand library description</summary>
 
-## Examples
+JavaScript library that builds concave hull by set of points.
 
-See live examples <a target="_blank" href="http://andriiheonia.github.io/hull/">here</a>.
-
-## Usage
+Usage:
 
 	var points = [ [236, 126], [234, 115], [238, 109], [247, 102], ... ];
 	hull(points, 50); // returns points of the hull (in clockwise order)
 
-## Params
+Params:
 
 * 1st param - array of coordinates in format: `[[x1, y1], [x2, y2], ..., [xn, yn]]`.
 * 2nd param - concavity. `1` - thin shape. `Infinity` - convex hull. By default `20`.
 * 3rd param - points format. For example: `['.lng', '.lat']` if you have `{lng: x, lat: y}` points. By default you can use `[x, y]` points.
 
-## How it works
-
-<details>
-    <summary>Expand</summary>
-
-Let's see step by step what happens when you call `hull()` function:
-
-<ol>
-    <li>
-        <div>Hull.js takes your source points of the shape:</div>
-        <div><img src="https://raw.githubusercontent.com/andriiheonia/hull/master/readme-imgs/0.png" /></div>
-    </li>
-    <li>
-        <div>Builds convex hull:</div>
-        <div><img src="https://raw.githubusercontent.com/andriiheonia/hull/master/readme-imgs/1.png" /></div>
-    </li>
-    <li>
-        <div>After that, the edges flex inward (according to the `concavity` param). For example:</div>
-        <div>
-            <img src="https://raw.githubusercontent.com/andriiheonia/hull/master/readme-imgs/2_1.png" />
-            `concavity = 80`<br/>
-            <img src="https://raw.githubusercontent.com/andriiheonia/hull/master/readme-imgs/2_2.png" />
-            `concavity = 40`<br/>
-            <img src="https://raw.githubusercontent.com/andriiheonia/hull/master/readme-imgs/2_3.png" />
-            `concavity = 20`
-        </div>
-    </li>
-</ol>
-
-</details>
-
 ## NPM package
 
-Since version 1.0.7 this library is not hosted on npmjs.com. You can still use [GitHub URL](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#github-urls) as a dependency to fetch the latest version, but keep in mind that the entire library is deprecated and there are no plans to maintain it.
+It is still possible to fetch the latest version of the library by using [GitHub URL](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#github-urls) as a dependency, but **since the entire library is now deprecated, it is recommended to look for alternative solutions**.
 
 Publishing this library to the public NPM registry under a different name and encouraging other users using unmaintained package is not recommended.
 
-## Development
-
-    npm install     # install dependencies
-    npm run test    # run tests and build file for debugging in browser
-    npm run watch   # watch ./src dir and automatically rebuild file for debugging
-
-## TypeScript
-
-You can install <a target="_blank" href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/hull.js">third-party TypeScript definitions</a> via `npm install --save @types/hull.js`.
-
 ## Related papers
+
+<details>
+    <summary>Expand</summary>
 
 * <a target="_blank" href="http://www.it.uu.se/edu/course/homepage/projektTDB/ht13/project10/Project-10-report.pdf">Implementation of a fast and efficient concave hull algorithm</a>.
 * <a target="_blank" href="http://www.cs.jhu.edu/~misha/Fall05/09.13.05.pdf">Computational Geometry: Convex Hulls</a>.
@@ -73,12 +34,15 @@ You can install <a target="_blank" href="https://github.com/DefinitelyTyped/Defi
 * <a target="_blank" href="http://allenchou.net/2013/07/cross-product-of-2d-vectors/">Game Math: "Cross Product" of 2D Vectors</a>.
 * <a target="_blank" href="http://users.livejournal.com/_winnie/237714.html">Угол между двумя векторами</a>.
 * <a target="_blank" href="http://habrahabr.ru/post/105882/">Когда не нужна тригонометрия</a>.
+</details>
 
 ## Changelog
 
 <details>
     <summary>Expand</summary>
 
+### 1.0.13 - 08.02.2025
+- Prepare for archiving: remove helper files, examples, and most of documentation.
 ### 1.0.12 - 26.01.2025
 - Some cleanup and deprecation.
 ### 1.0.11 - 11.12.2024

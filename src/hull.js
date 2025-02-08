@@ -2,10 +2,10 @@
 
 'use strict';
 
-const intersect = require('./intersect.js');
+const intersect = require('robust-segment-intersect');
 const grid = require('./grid.js');
 const formatUtil = require('./format.js');
-const convexHull = require('./convex.js');
+const convexHull = require('monotone-convex-hull-2d');
 
 function _filterDuplicates(pointset) {
     const unique = [pointset[0]];
@@ -47,7 +47,7 @@ function _intersect(segment, pointset) {
             segment[0][0] === seg[1][0] && segment[0][1] === seg[1][1]) {
             continue;
         }
-        if (intersect(segment, seg)) {
+        if (intersect(segment[0], segment[1], seg[0], seg[1])) {
             return true;
         }
     }
@@ -172,7 +172,9 @@ function hull(pointset, concavity, format) {
         occupiedArea[1] * MAX_SEARCH_BBOX_SIZE_PERCENT
     ];
 
-    const convex = convexHull(points);
+    const convex = convexHull(points).reverse().map(idx => points[idx]); // ccw -> cw, indices -> points
+    convex.push(convex[0]);
+
     const innerPoints = points.filter(function(pt) {
         return convex.indexOf(pt) < 0;
     });
