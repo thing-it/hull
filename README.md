@@ -1,4 +1,5 @@
-## NOTE: This library is unmaintained and deprecated.
+Fork of the hull.js library. Cloned for publishing purposes and to fix vulnerabilities.
+Not actively maintained. TBD if this should be replaced by e.g. concaveman. 
 
 <details>
     <summary>Click to expand library description</summary>
