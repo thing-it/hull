@@ -22,6 +22,6 @@
     "node": true,
     "esversion": 6
   },
-  "private": true,
+  "private": false,
   "license": "SEE LICENSE IN LICENSE"
 }
